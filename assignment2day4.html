@@ -1,0 +1,28 @@
+<!--assignment 2-->
+    <!DOCTYPE html>
+    <html>
+        <head>
+          <h1>--assignment 2--</h1>
+        </head>
+        <body>
+            <script>
+                total=0;
+                pTotal=mTotal=0;
+              student=[{roll:101,name:"kiran",physics:98,Maths:89},{roll:102,name:"komal",physics:98,Maths:89},{roll:103,name:"rohan",physics:98,Maths:89},{roll:104,name:"rahul",physics:33,Maths:77},{roll:105,name:"ram",physics:38,Maths:81},{roll:106,name:"shree",physics:55,Maths:45}]
+              for(i=0;i<student.length;i++)
+               {
+                total=total+student[i].Maths+student[i].physics;
+                pTotal=pTotal+student[i].physics;
+                mTotal=mTotal+student[i].Maths;
+            }
+            l=student.length;
+                        console.log("Total marks of student"+total)  
+                        console.log("Total marks of student in Maths"+mTotal)  
+                        console.log("Total marks of student in physics"+pTotal)  
+                        console.log("===========================================")
+            console.log("Average is "+(total/l))
+            console.log("Average of Maths "+(mTotal/l))
+            console.log("Average of Physics "+(pTotal/l))
+            </script>   
+                    </body>
+        </html>
