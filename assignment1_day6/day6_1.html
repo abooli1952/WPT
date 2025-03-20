@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <style>
+    body{
+      background-image: url(menu.jpg) ;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    div{
+      text-align: center;
+            border-radius:30px;
+box-shadow:12px 12px 15px gray;
+      background-color:darkolivegreen;
+      height: 260px;
+      width: 250px;
+      margin:auto auto;
+      margin-top: 200px;
+    }
+   </style>
+  </head>
+  <body>
+    
+    <div >
+      <h1 style="font-family: 'Courier New', Courier, monospace;" ><strong>Menu Card</strong> </h1>
+    <input type="radio" name="btn" value="idli" id="1"><strong>idli</strong>
+    <input type="radio" name="btn" value="dosa" id="2"><strong>dosa</strong>
+    <input type="radio" name="btn" value="vada" id="3"><strong>vada</strong>  <br>
+    <img src=" " id="img"><br>
+    <h1  id="h1">select menu
+    </h1>
+    </div>
+    
+    <script>
+      const img=document.getElementById("img")
+      
+      document.getElementById("1").onclick=()=>{
+        img.setAttribute("src","download.jpg")
+        document.getElementById("h1").innerHTML="&#8377;120"
+      }
+      document.getElementById("2").onclick=()=>{
+          img.setAttribute("src","images.jpg")
+          document.getElementById("h1").innerHTML="&#8377;150"
+      }
+      document.getElementById("3").onclick=()=>{
+        img.setAttribute("src","vada.jpg")
+        document.getElementById("h1").innerHTML="&#8377;110"
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    input{
+        background-color: aqua;
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+        font-size: large;
+        font-weight: bold;
+        
+    }
+</style>
+    </head>
+    <body>
+        
+        <img src="off.jpg" id="img">
+        <input type="button" value="on" onclick="bulb()" id="btn">
+        <script>
+function bulb()
+{
+  const btn=document.getElementById("btn");
+  const img=document.getElementById("img");
+  const btnText=btn.getAttribute("value");
+  if(btnText=="on")
+  {
+ img.setAttribute("src","on.png");
+  btn.setAttribute("value","off");
+  }
+  else{
+    img.setAttribute("src","off.png");
+  btn.setAttribute("value","on");
+  }
+}
+
+        </script>
+    </body>
+</html>
